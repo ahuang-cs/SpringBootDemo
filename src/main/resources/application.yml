@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: SpringBootDemo
+  datasource:
+    url: jdbc:h2:file:./employee;DB_CLOSE_ON_EXIT=FALSE;
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+      format_sql: true
